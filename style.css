@@ -1,0 +1,7 @@
+.search-column {
+    background-color: lightblue;
+}
+
+.card-body {
+    flex: auto;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Weather DashBoard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+
+
+  <body>
+    <!--Adding header (title)-->
+    <header class="bg-dark text-white text-center">
+        <h1>Weather DashBoard</h1>   
+    </header>
+
+    <!--Adding left side of webpage // city search box-->
+    <div id="content-left" class="col-md-3">
+        <form>
+            <label for="city-search">Search for a City: </label>
+            <div class="form-row">
+                <input id="city-search" class="form-control" name="city" value="Riverside"></input>
+                    <!--Adding button (search)-->
+                <button class="btn btn-primary" type="submit">Search</button>
+            </div>
+        </form>
+         <!--Adding history (search)-->
+        <div class="history-search" id="history-search-button"></div>
+    </div>
+    <!--Adding forecast -->
+    <div class="col-12 col-md-9">
+        <div class="row border selected city" id="current-forecast">
+            <div class="col-12">
+                <h2 id="city search"></h2>
+                <div id="current-weather-container" class="list-group"></div>
+            </div>
+        </div>
+        <div class="row border" id="five-day-forecast">
+            <h2 class="col-12" id="forecast"></h2>
+            <div class="d-fle" id="fiveday-container"></div>
+        </div>
+
+  </body>
+	<script src="script.js"></script>
+  </body>
+</html>
